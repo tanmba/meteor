@@ -1,0 +1,37 @@
+<head>
+  <title>happynewyear</title>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Nouveau manga</h1>
+
+        <form class="new-manga">
+            <input type="text" name="text" placeholder="Ajouter un manga" />
+        </form>
+    </header>
+
+    <h1>Liste de manga</h1>
+    <ul>
+        {{#each manga}}
+            <li>{{ title}}</li>
+        {{/each}}
+    </ul>
+
+</div>
+
+<!--<form class="add-manga">
+    Titre:<br>
+    <input type="text" name="titre">
+    <br>
+    <input type="submit" value="Ajouter">
+</form> !-->
+
+</body>
+
+<template name="manga">
+    {{title}}
+</template>
+
+
